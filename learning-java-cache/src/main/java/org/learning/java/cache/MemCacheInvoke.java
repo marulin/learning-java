@@ -10,10 +10,7 @@ public class MemCacheInvoke {
   static {
 
     // 设置缓存服务器列表，当使用分布式缓存的时，可以指定多个缓存服务器。这里应该设置为多个不同的服务，我这里将两个服务设置为一样的，大家不要向我学习，呵呵。
-    String[] servers = {"localhost:11211",
-    // "10.15.0.215:46697",
-    // "10.15.0.215:46697",
-        };
+    String[] servers = {"localhost:11211",};
 
     // 设置服务器权重
     Integer[] weights = {3, 2};
