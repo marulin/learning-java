@@ -1,4 +1,4 @@
-package org.learning.java.cache;
+package com.xianglesong;
 
 import com.meetup.memcached.MemcachedClient;
 import com.meetup.memcached.SockIOPool;
