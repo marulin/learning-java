@@ -13,4 +13,11 @@ public class BindTest {
     HelloService helloService = injector.getInstance(HelloService.class);
     helloService.sayHello();
   }
+
+  @Test
+  public void testBind2() {
+    Injector injector = Guice.createInjector(new HelloServiceModule2());
+    HelloService helloService = injector.getInstance(HelloService.class);
+    helloService.sayHello();
+  }
 }
