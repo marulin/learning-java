@@ -9,5 +9,6 @@
   <modules>
     <module>learning-java-cache</module>
     <module>learning-java-guice</module>
+    <module>learning-java-basic</module>
   </modules>
 </project>
