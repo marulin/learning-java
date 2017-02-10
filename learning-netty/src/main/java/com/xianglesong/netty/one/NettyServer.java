@@ -2,7 +2,10 @@ package com.xianglesong.netty.one;
 
 import java.net.InetSocketAddress;
 import java.util.concurrent.Executors;
+
 import org.jboss.netty.bootstrap.ServerBootstrap;
+import org.jboss.netty.buffer.ChannelBuffer;
+import org.jboss.netty.buffer.ChannelBuffers;
 import org.jboss.netty.channel.Channel;
 import org.jboss.netty.channel.ChannelHandlerContext;
 import org.jboss.netty.channel.ChannelStateEvent;
@@ -62,6 +65,9 @@ class Server {
     @Override
     public void channelConnected(ChannelHandlerContext ctx, ChannelStateEvent e) throws Exception {
       System.out.println("Channel connected " + e);
+      Channel ch = e.getChannel();
+      ChannelBuffer cb = ChannelBuffers.wrappedBuffer("success".getBytes());
+      ch.write(cb);
     }
 
     @Override
@@ -77,6 +83,7 @@ class Server {
 
     private void processMessage(MessageEvent e) {
       Channel ch = e.getChannel();
+      System.out.println("message: " + e.getMessage());
       ch.write(e.getMessage());
     }
   }
