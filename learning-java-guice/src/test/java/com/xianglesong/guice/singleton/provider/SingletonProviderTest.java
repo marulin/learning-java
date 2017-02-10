@@ -14,5 +14,7 @@ public class SingletonProviderTest {
     System.out.println(cat_A);
     Animal cat_B = injector.getInstance(Animal.class);
     System.out.println(cat_B);
+
+    System.out.println(cat_A == cat_B);
   }
 }

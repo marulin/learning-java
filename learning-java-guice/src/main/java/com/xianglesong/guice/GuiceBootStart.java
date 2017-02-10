@@ -12,6 +12,7 @@ public class GuiceBootStart {
   public static void main(String[] args) {
     Injector injector = Guice.createInjector(new BindDAOModule());
     UserInfoDAO userInfo = injector.getInstance(UserInfoDAO.class);
+    userInfo.update(1, "name");
     UserInfoDAO userInfo2 = injector.getInstance(UserInfoDAO.class);
     Assert.assertEquals(userInfo.hashCode(), userInfo2.hashCode());
   }

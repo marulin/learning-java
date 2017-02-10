@@ -9,8 +9,8 @@ public class HelloServiceModule extends AbstractModule {
 
   @Override
   protected void configure() {
-    // bind(HelloService.class).to(HelloServiceImpl.class);
-    bind(HelloService.class).to(SubHelloServiceImpl.class);
+     bind(HelloService.class).to(HelloServiceImpl.class);
+     // bind(HelloService.class).to(SubHelloServiceImpl.class);
   }
 
 }
