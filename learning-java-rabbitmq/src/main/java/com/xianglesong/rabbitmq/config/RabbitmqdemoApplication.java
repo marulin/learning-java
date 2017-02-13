@@ -23,7 +23,11 @@ public class RabbitmqdemoApplication implements CommandLineRunner {
   @Override
   public void run(String... strings) throws Exception {
     Random random = new Random();
+    int i = 0;
     while (true) {
+      if (i++ > 10)
+        break;
+      senderService.sendFoo2Rabbitmq(new Foo(UUID.randomUUID().toString()));
       // senderService.sendBar2Rabbitmq(new Bar(random.nextInt()));
       // senderService.sendFoo2Rabbitmq(new Foo(UUID.randomUUID().toString()));
     }

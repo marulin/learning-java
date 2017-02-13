@@ -19,7 +19,7 @@ import org.springframework.context.annotation.Primary;
 @Primary
 public class RabbitMQConfiguration {
 
-  final static String TEST_QUEUE_NAME = "queue.bar";
+  final static String TEST_QUEUE_NAME = "queue.foo";
   // final static String TEST_EXCHANGE_NAME = "test_exchange";
   // final static String ROUTING_KEY = "test";
 
