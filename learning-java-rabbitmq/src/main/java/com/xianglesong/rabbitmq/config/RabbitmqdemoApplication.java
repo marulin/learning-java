@@ -10,7 +10,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.ComponentScan;
 
 @SpringBootApplication
-@ComponentScan(basePackages = "com.xianglesong.rabbitmq.config")
+@ComponentScan(basePackages = "com.xianglesong.rabbitmq")
 public class RabbitmqdemoApplication implements CommandLineRunner {
 
     public static void main(String[] args) {
