@@ -1,4 +1,4 @@
-package com.xianglesong.rabbitmq;
+package com.xianglesong.rabbitmq.helloworld;
 
 import java.util.concurrent.TimeoutException;
 
