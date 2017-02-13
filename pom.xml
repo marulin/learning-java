@@ -11,5 +11,6 @@
     <module>learning-java-guice</module>
     <module>learning-java-basic</module>
     <module>learning-netty</module>
+    <module>learning-java-rabbitmq</module>
   </modules>
 </project>
