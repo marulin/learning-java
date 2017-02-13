@@ -27,6 +27,7 @@ public class RabbitmqdemoApplication implements CommandLineRunner {
     while (true) {
       if (i++ > 10)
         break;
+      System.out.println("send: " + i);
       senderService.sendFoo2Rabbitmq(new Foo(UUID.randomUUID().toString()));
       // senderService.sendBar2Rabbitmq(new Bar(random.nextInt()));
       // senderService.sendFoo2Rabbitmq(new Foo(UUID.randomUUID().toString()));

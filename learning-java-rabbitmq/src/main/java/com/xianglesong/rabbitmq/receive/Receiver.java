@@ -11,6 +11,7 @@ public class Receiver implements MessageListener {
   public void onMessage(Message message) {
     System.out.println("xxx =================");
     System.out.println(message);
+    System.out.println("m:" + new String(message.getBody()));
     System.out.println("=================");
   }
 }
