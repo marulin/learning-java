@@ -12,6 +12,11 @@ public class Bar {
     return this.age;
   }
 
+  @Override
+  public String toString() {
+    return "Bar [age=" + age + "]";
+  }
+
   public void setAge(int age) {
     this.age = age;
   }

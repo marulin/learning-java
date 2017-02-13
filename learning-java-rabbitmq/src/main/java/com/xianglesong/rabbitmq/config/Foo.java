@@ -8,6 +8,11 @@ public class Foo {
     this.name = name;
   }
 
+  @Override
+  public String toString() {
+    return "Foo [name=" + name + "]";
+  }
+
   public void setName(String name) {
     this.name = name;
   }
