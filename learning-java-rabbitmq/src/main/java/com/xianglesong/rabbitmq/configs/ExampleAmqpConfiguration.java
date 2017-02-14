@@ -1,4 +1,4 @@
-package com.xianglesong.rabbitmq.config;
+package com.xianglesong.rabbitmq.configs;
 
 import java.io.UnsupportedEncodingException;
 
@@ -6,6 +6,7 @@ import org.springframework.amqp.core.Message;
 import org.springframework.amqp.core.MessageListener;
 import org.springframework.amqp.rabbit.connection.CachingConnectionFactory;
 import org.springframework.amqp.rabbit.connection.ConnectionFactory;
+import org.springframework.amqp.rabbit.core.RabbitTemplate;
 import org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -46,4 +47,5 @@ public class ExampleAmqpConfiguration {
       }
     };
   }
+
 }
