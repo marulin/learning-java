@@ -19,7 +19,7 @@ public class ExampleAmqpSend {
     System.out.println("send msg");
     amqpTemplate.setRoutingKey("task_queue");
     amqpTemplate.setQueue("task_queue");
-    amqpTemplate.convertAndSend(new String("test ag"));
+    amqpTemplate.convertAndSend(new String("test ag" + System.currentTimeMillis()));
     System.out.println("send msg end.");
   }
 }
